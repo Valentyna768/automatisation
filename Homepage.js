@@ -38,4 +38,10 @@ describe('Homepage Logo+SEO', () => {
         const robotsTxt = $('/html/body/pre')
         expect(robotsTxt).toHaveTextContaining('User-agent', 'Disallow', 'Allow');
     })
+    // Test 7 Verify scroll to top button and click                 //
+    it('Verify scroll to top button and click', () => {
+        const scrollBtn = $('/html/body/div/span')
+        expect(scrollBtn).toBeDisplayed()
+        scrollBtn.click();
+    })
 });
