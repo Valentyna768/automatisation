@@ -1,3 +1,4 @@
+
 describe('Casino Table block', () => {
     beforeEach(function () {
         browser.url('https://nederlandscasinos.net/');
@@ -28,13 +29,13 @@ describe('Casino Table block', () => {
     it('click on top1 logo and redirect to brand ', async () => {
         const top1logo = $('/html/body/div/div/div/div[1]/main/section[1]/div[1]/div/div[1]/div/div[1]/img');
         top1logo.click()
-        await browser.newWindow('https://nederlandscasinos.net/to-casino/?id=6512&location=https://nederlandscasinos.net/&cid=1313767433.1636014210&element=cta_cart_block')
+        await browser.newWindow('https://nederlandscasinos.net/to-casino/?id=6512&location=https://nederlandscasinos.net/&cid=1359577313.1636535476&element=cta_cart_logo')
     });
     // Test 6  Check click on top1 cart cta and redirect to brand//
     it('click on top1 cta and redirect to brand ', async () => {
         const top1cta = $('/html/body/div/div/div/div[1]/main/section[1]/div[1]/div/div[1]/div/div[5]/button');
         top1cta.click()
-        await browser.newWindow('https://nederlandscasinos.net/to-casino/?id=6512&location=https://nederlandscasinos.net/&cid=1313767433.1636014210&element=cta_cart_block')
+        await browser.newWindow('https://nederlandscasinos.net/to-casino/?id=6512&location=https://nederlandscasinos.net/&cid=1359577313.1636535476&element=cta_cart_button')
     });
     // Test 7  show Casino logo and alt in top1//
     it('show Casino logo and alt in top1', () => {
@@ -72,19 +73,19 @@ describe('Casino Table block', () => {
     it('click on top2 cart and redirect to brand ', async () => {
         const top2cart = $('/html/body/div/div/div/div[1]/main/section[1]/div[1]/div/div[2]/div');
         top2cart.click()
-        await browser.newWindow('https://nederlandscasinos.net/to-casino/?id=7585&location=https://nederlandscasinos.net/&cid=1313767433.1636014210&element=cta_cart_block')
+        await browser.newWindow('https://nederlandscasinos.net/to-casino/?id=7585&location=https://nederlandscasinos.net/&cid=1359577313.1636535476&element=cta_cart_block')
     });
     // Test 14  Check click on top2 cart logo and redirect to brand//
     it('click on top2 logo and redirect to brand ', async () => {
         const top2logo = $('/html/body/div/div/div/div[1]/main/section[1]/div[1]/div/div[2]/div/div[1]');
         top2logo.click()
-        await browser.newWindow('https://nederlandscasinos.net/to-casino/?id=7585&location=https://nederlandscasinos.net/&cid=1313767433.1636014210&element=cta_cart_block')
+        await browser.newWindow('https://nederlandscasinos.net/to-casino/?id=7585&location=https://nederlandscasinos.net/&cid=1359577313.1636535476&element=cta_cart_logo')
     });
     // Test 15  Check click on top2 cart cta and redirect to brand//
     it('click on top2 cta and redirect to brand ', async () => {
         const top2cta = $('/html/body/div/div/div/div[1]/main/section[1]/div[1]/div/div[2]/div/div[5]/button');
         top2cta.click()
-        await browser.newWindow('https://nederlandscasinos.net/to-casino/?id=7585&location=https://nederlandscasinos.net/&cid=1313767433.1636014210&element=cta_cart_block')
+        await browser.newWindow('https://nederlandscasinos.net/to-casino/?id=7585&location=https://nederlandscasinos.net/&cid=1359577313.1636535476&element=cta_cart_button')
     });
     // Test 16  show Casino logo and alt in top2//
     it('show Casino logo and alt in top2', () => {
@@ -122,19 +123,19 @@ describe('Casino Table block', () => {
     it('click on top3 cart and redirect to brand ', async () => {
         const top3cart = $('/html/body/div/div/div/div[1]/main/section[1]/div[1]/div/div[3]/div');
         top3cart.click()
-        await browser.newWindow('https://nederlandscasinos.net/to-casino/?id=7599&location=https://nederlandscasinos.net/&cid=1313767433.1636014210&element=cta_cart_logo')
+        await browser.newWindow('https://nederlandscasinos.net/to-casino/?id=7599&location=https://nederlandscasinos.net/&cid=1359577313.1636535476&element=cta_cart_block')
     });
     // Test 23 Check click on top3 cart logo and redirect to brand//
     it('click on top3 logo and redirect to brand ', async () => {
         const top3logo = $('/html/body/div/div/div/div[1]/main/section[1]/div[1]/div/div[3]/div/div[1]');
         top3logo.click()
-        await browser.newWindow('https://nederlandscasinos.net/to-casino/?id=7599&location=https://nederlandscasinos.net/&cid=1313767433.1636014210&element=cta_cart_logo')
+        await browser.newWindow('https://nederlandscasinos.net/to-casino/?id=7599&location=https://nederlandscasinos.net/&cid=1359577313.1636535476&element=cta_cart_logo')
     });
     // Test 24 Check click on top3 cart cta and redirect to brand//
     it('click on top3 cta and redirect to brand ', async () => {
         const top3cta = $('/html/body/div/div/div/div[1]/main/section[1]/div[1]/div/div[3]/div/div[5]/button');
         top3cta.click()
-        await browser.newWindow('https://nederlandscasinos.net/to-casino/?id=7599&location=https://nederlandscasinos.net/&cid=1313767433.1636014210&element=cta_cart_logo')
+        await browser.newWindow('https://nederlandscasinos.net/to-casino/?id=7599&location=https://nederlandscasinos.net/&cid=1359577313.1636535476&element=cta_cart_button')
     });
     // Test 25 show Casino logo and alt in top3//
     it('show Casino logo and alt in top1', () => {
@@ -177,19 +178,19 @@ describe('Casino Table block', () => {
     it('click on row 4 and redirect to brand ', async () => {
         const row4cart = $('/html/body/div/div/div/div[1]/main/section[1]/div[2]/div/div/div[2]/div[1]');
         row4cart.click()
-        await browser.newWindow('https://nederlandscasinos.net/to-casino/?id=7601&location=https://nederlandscasinos.net/&cid=1313767433.1636014210&element=cta_table_row')
+        await browser.newWindow('https://nederlandscasinos.net/to-casino/?id=7601&location=https://nederlandscasinos.net/&cid=1359577313.1636535476&element=cta_table_row')
     });
     // Test 33  Check click on row 4 logo and redirect to brand//
     it('click on row 4 logo and redirect to brand ', async () => {
         const row4logoclick = $('/html/body/div/div/div/div[1]/main/section[1]/div[2]/div/div/div[2]/div[1]/div[2]');
         row4logoclick.click()
-        await browser.newWindow('https://nederlandscasinos.net/to-casino/?id=7601&location=https://nederlandscasinos.net/&cid=1313767433.1636014210&element=cta_table_row')
+        await browser.newWindow('https://nederlandscasinos.net/to-casino/?id=7601&location=https://nederlandscasinos.net/&cid=1359577313.1636535476&element=cta_table_logo')
     });
     // Test 34  Check click on row 4 cta and redirect to brand//
     it('click on row 4 cta and redirect to brand ', async () => {
         const row4cta = $('/html/body/div/div/div/div[1]/main/section[1]/div[2]/div/div/div[2]/div[1]/div[7]/button');
         row4cta.click()
-        await browser.newWindow('https://nederlandscasinos.net/to-casino/?id=7601&location=https://nederlandscasinos.net/&cid=1313767433.1636014210&element=cta_table_row')
+        await browser.newWindow('https://nederlandscasinos.net/to-casino/?id=7601&location=https://nederlandscasinos.net/&cid=1359577313.1636535476&element=cta_table_button')
     });
     // Test 35  show Casino logo and alt in row4//
     it('show Casino logo and alt in row4', () => {
@@ -215,7 +216,107 @@ describe('Casino Table block', () => {
     });
     // Test 39  show Casino payments block in row4//
     it('show Casino payments block in row4', () => {
-        const top1payments = $('body > div > div > div > div.bfad93f > main > section:nth-child(1) > div.js-ajax-casino-table > div > div > div.js-fragment-table-body.bfadee4 > div:nth-child(1) > div.bfad5db.bfad38c');
-        expect(top1payments).toBeDisplayed()
+        const row4payments = $('body > div > div > div > div.bfad93f > main > section:nth-child(1) > div.js-ajax-casino-table > div > div > div.js-fragment-table-body.bfadee4 > div:nth-child(1) > div.bfad5db.bfad38c');
+        expect(row4payments).toBeDisplayed()
+    });
+    // Test 40  Check row 5 in Casino Table//
+    it('Check row 5 displaying in Casino Table ', () => {
+        const row5 = $('body > div > div > div > div.bfad93f > main > section:nth-child(1) > div.js-ajax-casino-table > div > div > div.js-fragment-table-body.bfadee4 > div:nth-child(2)');
+        expect(row5).toBeDisplayed()
+    });
+    // Test 41  Check click on row 5 and redirect to brand//
+    it('click on row 5 and redirect to brand ', async () => {
+        const row5cart = $('body > div > div > div > div.bfad93f > main > section:nth-child(1) > div.js-ajax-casino-table > div > div > div.js-fragment-table-body.bfadee4 > div:nth-child(2)');
+        row5cart.click()
+        await browser.newWindow('https://nederlandscasinos.net/to-casino/?id=6429&location=https://nederlandscasinos.net/&cid=1359577313.1636535476&element=cta_table_row')
+    });
+    // Test 42  Check click on row 5 logo and redirect to brand//
+    it('click on row 5 logo and redirect to brand ', async () => {
+        const row5logoclick = $('/html/body/div/div/div/div[1]/main/section[1]/div[2]/div/div/div[2]/div[1]/div[2]');
+        row5logoclick.click()
+        await browser.newWindow('https://nederlandscasinos.net/to-casino/?id=6429&location=https://nederlandscasinos.net/&cid=1359577313.1636535476&element=cta_table_logo')
+    });
+    // Test 43  Check click on row 5 cta and redirect to brand//
+    it('click on row 5 cta and redirect to brand ', async () => {
+        const row5cta = $('/html/body/div/div/div/div[1]/main/section[1]/div[2]/div/div/div[2]/div[1]/div[7]/button');
+        row5cta.click()
+        await browser.newWindow('https://nederlandscasinos.net/to-casino/?id=6429&location=https://nederlandscasinos.net/&cid=1359577313.1636535476&element=cta_table_button')
+    });
+    // Test 44  show Casino logo and alt in row5//
+    it('show Casino logo and alt in row5', () => {
+        const row5Logo = $('body > div > div > div > div.bfad93f > main > section:nth-child(1) > div.js-ajax-casino-table > div > div > div.js-fragment-table-body.bfadee4 > div:nth-child(2) > div.bfad5db.bfad2af > div > img');
+        expect(row5Logo).toBeDisplayed()
+        expect(row5Logo).toHaveAttributeContaining('alt')
+    });
+    // Test 45  show bonus in row4//
+    it('show bonus in row5', () => {
+        const bonusRow5 = $('body > div > div > div > div.bfad93f > main > section:nth-child(1) > div.js-ajax-casino-table > div > div > div.js-fragment-table-body.bfadee4 > div:nth-child(2) > div.bfad5db.bfadb04 > span');
+        expect(bonusRow5).toHaveTextContaining('€1000 + 100 Gratis Spins')
+    });
+    // Test 46  show Casino raiting stars in row5//
+    it('show Casino raiting stars in row5', () => {
+        const row5raiting = $('body > div > div > div > div.bfad93f > main > section:nth-child(1) > div.js-ajax-casino-table > div > div > div.js-fragment-table-body.bfadee4 > div:nth-child(2) > div.bfad5db.bfaddb5 > span');
+        expect(row5raiting).toBeDisplayed()
+    });
+    // Test 47  Check click on row5 cta review and redirect to review page//
+    it('click on row5 cta review and redirect to review page ', () => {
+        const row5cartreview = $('body > div > div > div > div.bfad93f > main > section:nth-child(1) > div.js-ajax-casino-table > div > div > div.js-fragment-table-body.bfadee4 > div:nth-child(2) > div.bfad5db.bfad1c2.bfad9377 > a');
+        expect(row5cartreview).toHaveUrlContaining('/review/casinorex/')
+        row5cartreview.click()
+    });
+    // Test 48  show Casino payments block in row5//
+    it('show Casino payments block in row5', () => {
+        const row5payments = $('body > div > div > div > div.bfad93f > main > section:nth-child(1) > div.js-ajax-casino-table > div > div > div.js-fragment-table-body.bfadee4 > div:nth-child(2) > div.bfad5db.bfad38c');
+        expect(row5payments).toBeDisplayed()
+    });
+    // Test 49  Check row 6 in Casino Table//
+    it('Check row 6 displaying in Casino Table ', () => {
+        const row6 = $('body > div > div > div > div.bfad93f > main > section:nth-child(1) > div.js-ajax-casino-table > div > div > div.js-fragment-table-body.bfadee4 > div:nth-child(3)');
+        expect(row6).toBeDisplayed()
+    });
+    // Test 50  Check click on row 6 and redirect to brand//
+    it('click on row 6 and redirect to brand ', async () => {
+        const row6cart = $('body > div > div > div > div.bfad93f > main > section:nth-child(1) > div.js-ajax-casino-table > div > div > div.js-fragment-table-body.bfadee4 > div:nth-child(3)');
+        row6cart.click()
+        await browser.newWindow('https://nederlandscasinos.net/to-casino/?id=7527&location=https://nederlandscasinos.net/&cid=1359577313.1636535476&element=cta_table_row')
+    });
+    // Test 51  Check click on row 6 logo and redirect to brand//
+    it('click on row 6 logo and redirect to brand ', async () => {
+        const row6logoclick = $('body > div > div > div > div.bfad93f > main > section:nth-child(1) > div.js-ajax-casino-table > div > div > div.js-fragment-table-body.bfadee4 > div:nth-child(3) > div.bfad5db.bfad2af');
+        row6logoclick.click()
+        await browser.newWindow('https://nederlandscasinos.net/to-casino/?id=7527&location=https://nederlandscasinos.net/&cid=1359577313.1636535476&element=cta_table_logo')
+    });
+    // Test 52  Check click on row 6 cta and redirect to brand//
+    it('click on row 6 cta and redirect to brand ', async () => {
+        const row6cta = $('body > div > div > div > div.bfad93f > main > section:nth-child(1) > div.js-ajax-casino-table > div > div > div.js-fragment-table-body.bfadee4 > div:nth-child(3) > div.bfad5db.bfad1c2.bfad9377 > button');
+        row6cta.click()
+        await browser.newWindow('https://nederlandscasinos.net/to-casino/?id=7527&location=https://nederlandscasinos.net/&cid=1359577313.1636535476&element=cta_table_button')
+    });
+    // Test 53  show Casino logo and alt in row6//
+    it('show Casino logo and alt in row6', () => {
+        const row6Logo = $('body > div > div > div > div.bfad93f > main > section:nth-child(1) > div.js-ajax-casino-table > div > div > div.js-fragment-table-body.bfadee4 > div:nth-child(3) > div.bfad5db.bfad2af > div > img');
+        expect(row6Logo).toBeDisplayed()
+        expect(row6Logo).toHaveAttributeContaining('alt')
+    });
+    // Test 54  show bonus in row6//
+    it('show bonus in row6', () => {
+        const bonusRow6 = $('body > div > div > div > div.bfad93f > main > section:nth-child(1) > div.js-ajax-casino-table > div > div > div.js-fragment-table-body.bfadee4 > div:nth-child(3) > div.bfad5db.bfadb04 > span');
+        expect(bonusRow6).toHaveTextContaining('€1000+200 Gratis Spins')
+    });
+    // Test 55  show Casino raiting stars in row6//
+    it('show Casino raiting stars in row6', () => {
+        const row6raiting = $('body > div > div > div > div.bfad93f > main > section:nth-child(1) > div.js-ajax-casino-table > div > div > div.js-fragment-table-body.bfadee4 > div:nth-child(3) > div.bfad5db.bfaddb5 > span');
+        expect(row6raiting).toBeDisplayed()
+    });
+    // Test 56  Check click on row6 cta review and redirect to review page//
+    it('click on row6 cta review and redirect to review page ', () => {
+        const row6cartreview = $('body > div > div > div > div.bfad93f > main > section:nth-child(1) > div.js-ajax-casino-table > div > div > div.js-fragment-table-body.bfadee4 > div:nth-child(3) > div.bfad5db.bfad1c2.bfad9377 > a');
+        expect(row6cartreview).toHaveUrlContaining('/review/king-billy-casino/')
+        row6cartreview.click()
+    });
+    // Test 57  show Casino payments block in row6//
+    it('show Casino payments block in row6', () => {
+        const row6payments = $('body > div > div > div > div.bfad93f > main > section:nth-child(1) > div.js-ajax-casino-table > div > div > div.js-fragment-table-body.bfadee4 > div:nth-child(3) > div.bfad5db.bfad38c');
+        expect(row6payments).toBeDisplayed()
     });
 });
