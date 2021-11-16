@@ -200,6 +200,24 @@ describe('Slots category block', () => {
         const ShowMore = await $$('body > div > div > div > div.bfad93f > main > section:nth-child(9) > div > div > div.js-fragment-table-body.bfad15b > div:nth-child(7)');
         const Slot7 = await elem[1].nextElement()
         console.log(await nextElement.getText()); // outputs: "Sibling Three"
-
+    });
+        // Test 32 Click on show more button and open next slots//
+    it('Click on show more button and open next slots', async () => {
+        const ShowMore = $('body > div > div > div > div.bfad93f > main > section:nth-child(9) > div > div > div.bfadef3.load-more-wrapper > span')
+        expect(ShowMore).toBeDisplayed()
+        ShowMore.click()
+        browser.setTimeout({ timeout: 10000 })
+        const slot7 = $('body > div > div > div > div.bfad93f > main > section:nth-child(9) > div > div > div.js-fragment-table-body.bfad15b > div:nth-child(7)')
+        expect(slot7).toBeDisplayed()
+        const slot8 = $('body > div > div > div > div.bfad93f > main > section:nth-child(9) > div > div > div.js-fragment-table-body.bfad15b > div:nth-child(8)')
+        expect(slot8).toBeDisplayed()
+        const slot9 = $('body > div > div > div > div.bfad93f > main > section:nth-child(9) > div > div > div.js-fragment-table-body.bfad15b > div:nth-child(9)')
+        expect(slot9).toBeDisplayed()
+        const slot10 = $('body > div > div > div > div.bfad93f > main > section:nth-child(9) > div > div > div.js-fragment-table-body.bfad15b > div:nth-child(10)')
+        expect(slot10).toBeDisplayed()
+        const slot11 = $('body > div > div > div > div.bfad93f > main > section:nth-child(9) > div > div > div.js-fragment-table-body.bfad15b > div:nth-child(11)')
+        expect(slot11).toBeDisplayed()
+        const slot12 = $('body > div > div > div > div.bfad93f > main > section:nth-child(9) > div > div > div.js-fragment-table-body.bfad15b > div:nth-child(12)')
+        expect(slot12).toBeDisplayed()
     });
 });
