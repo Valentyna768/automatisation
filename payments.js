@@ -57,4 +57,26 @@ describe('Payments block', () => {
         expect(Button4).toHaveUrlContaining('/payments/klarna/')
         Button4.click()
     });
+    // Test 7 Displaying of Pyment 5, check alt for img, redirect to payment page//
+    it('Displaying of Pyment 5, check alt for img, redirect to payment page', () => {
+        const Payment5 = $('body > div > div > div > div.bfad93f > main > section:nth-child(14) > div > div > div:nth-child(5) > div');
+        expect(Payment5).toBeDisplayed()
+        const Img5 = $('body > div > div > div > div.bfad93f > main > section:nth-child(14) > div > div > div:nth-child(5) > div > div.bfad666 > div > img')
+        expect(Img5).toHaveAttribute('alt=')
+        const Button5 = $('body > div > div > div > div.bfad93f > main > section:nth-child(14) > div > div > div:nth-child(5) > div > div.bfad666 > a')
+        expect(Button5).toBeDisplayed
+        expect(Button5).toHaveUrlContaining('/payments/pay-n-play/')
+        Button5.click()
+    });
+    // Test 8 Displaying of Pyment 6, check alt for img, redirect to payment page//
+    it('Displaying of Pyment 6, check alt for img, redirect to payment page', () => {
+        const Payment6 = $('body > div > div > div > div.bfad93f > main > section:nth-child(14) > div > div > div:nth-child(6) > div');
+        expect(Payment6).toBeDisplayed()
+        const Img6 = $('body > div > div > div > div.bfad93f > main > section:nth-child(14) > div > div > div:nth-child(6) > div > div.bfad666 > div > img')
+        expect(Img6).toHaveAttribute('alt=')
+        const Button6 = $('body > div > div > div > div.bfad93f > main > section:nth-child(14) > div > div > div:nth-child(6) > div > div.bfad666 > a')
+        expect(Button6).toBeDisplayed
+        expect(Button6).toHaveUrlContaining('/payments/trustly-casinos/')
+        Button6.click()
+    });
 });
