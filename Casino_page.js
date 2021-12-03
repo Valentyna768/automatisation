@@ -127,5 +127,51 @@ describe('Casino review page', () => {
         expect(payment6).toHaveAttr('href')
         expect(payment6).toHaveLink('https://nederlandscasinos.net/payments/sofort/')
         payment6.click()
-        });
+    });
+    // Test 6  Check FAQ block//
+    it(' Check FAQ block', async () => {
+        const faqBlock = $('body > div > div:nth-child(1) > div > div.bfad93f > main > section:nth-child(3) > div')
+        expect(faqBlock).toBeDisplayed
+        expect(faqBlock).toHaveAttr('itemtype="https://schema.org/FAQPage"')
+        const h2 = $('body > div > div:nth-child(1) > div > div.bfad93f > main > section:nth-child(3) > div > h2')
+        expect(h2).toBeDisplayed
+        expect(h2).toHaveAttr('<h2, </h2>')
+        //Checking FAQ questions and answers
+        const q1 = $('body > div > div:nth-child(1) > div > div.bfad93f > main > section:nth-child(3) > div > div > dl.active.bfad275.js-faq-block > div > dt')
+        expect(q1).toBeDisplayed
+        expect(q1).toHaveAttr('itemtype="https://schema.org/Question"')
+        const a1 = $('body > div > div:nth-child(1) > div > div.bfad93f > main > section:nth-child(3) > div > div > dl:nth-child(2) > div')
+        expect(a1).toBeDisplayed
+        expect(a1).toHaveAttr('itemtype="https://schema.org/Answer"')
+        const q2 = $('body > div > div:nth-child(1) > div > div.bfad93f > main > section:nth-child(3) > div > div > dl:nth-child(3) > div')
+        expect(q2).toBeDisplayed
+        expect(q2).toHaveAttr('itemtype="https://schema.org/Question"')
+        q2.click()
+        const a2 = $('body > div > div:nth-child(1) > div > div.bfad93f > main > section:nth-child(3) > div > div > dl.bfad275.js-faq-block.active > div > div')
+        expect(a2).toBeDisplayed
+        expect(a2).toHaveAttr('itemtype="https://schema.org/Answer"')
+        const q3 = $('body > div > div:nth-child(1) > div > div.bfad93f > main > section:nth-child(3) > div > div > dl:nth-child(3) > div')
+        expect(q3).toBeDisplayed
+        expect(q3).toHaveAttr('itemtype="https://schema.org/Question"')
+        q3.click()
+        const a3 = $('body > div > div:nth-child(1) > div > div.bfad93f > main > section:nth-child(3) > div > div > dl.bfad275.js-faq-block.active > div > div')
+        expect(a3).toBeDisplayed
+        expect(a3).toHaveAttr('itemtype="https://schema.org/Answer"')
+
+        const q4 = $('body > div > div:nth-child(1) > div > div.bfad93f > main > section:nth-child(3) > div > div > dl.bfad275.js-faq-block.active > div')
+        expect(q4).toBeDisplayed
+        expect(q4).toHaveAttr('itemtype="https://schema.org/Question"')
+        q4.click()
+        const a4 = $('body > div > div:nth-child(1) > div > div.bfad93f > main > section:nth-child(3) > div > div > dl.bfad275.js-faq-block.active > div > div')
+        expect(a4).toBeDisplayed
+        expect(a4).toHaveAttr('itemtype="https://schema.org/Answer"')
+
+        const q5 = $('body > div > div:nth-child(1) > div > div.bfad93f > main > section:nth-child(3) > div > div > dl:nth-child(5) > div')
+        expect(q5).toBeDisplayed
+        expect(q5).toHaveAttr('itemtype="https://schema.org/Question"')
+        q5.click()
+        const a5 = $('body > div > div:nth-child(1) > div > div.bfad93f > main > section:nth-child(3) > div > div > dl.bfad275.js-faq-block.active > div > div')
+        expect(a5).toBeDisplayed
+        expect(a5).toHaveAttr('itemtype="https://schema.org/Answer"')
+    });
 });
