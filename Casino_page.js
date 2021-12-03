@@ -157,7 +157,6 @@ describe('Casino review page', () => {
         const a3 = $('body > div > div:nth-child(1) > div > div.bfad93f > main > section:nth-child(3) > div > div > dl.bfad275.js-faq-block.active > div > div')
         expect(a3).toBeDisplayed
         expect(a3).toHaveAttr('itemtype="https://schema.org/Answer"')
-
         const q4 = $('body > div > div:nth-child(1) > div > div.bfad93f > main > section:nth-child(3) > div > div > dl.bfad275.js-faq-block.active > div')
         expect(q4).toBeDisplayed
         expect(q4).toHaveAttr('itemtype="https://schema.org/Question"')
@@ -165,7 +164,6 @@ describe('Casino review page', () => {
         const a4 = $('body > div > div:nth-child(1) > div > div.bfad93f > main > section:nth-child(3) > div > div > dl.bfad275.js-faq-block.active > div > div')
         expect(a4).toBeDisplayed
         expect(a4).toHaveAttr('itemtype="https://schema.org/Answer"')
-
         const q5 = $('body > div > div:nth-child(1) > div > div.bfad93f > main > section:nth-child(3) > div > div > dl:nth-child(5) > div')
         expect(q5).toBeDisplayed
         expect(q5).toHaveAttr('itemtype="https://schema.org/Question"')
